@@ -164,7 +164,7 @@ Mixpanel.setOnce({"$email": "elvis@email.com", "Created": new Date().toISOString
 // Add a new Group for this user.
 // @param Group key
 // @param A valid Mixpanel property type
-Mixpanel.setGroup('company', 'mixpanel');
+Mixpanel.addGroup('company', 'mixpanel');
 
 // Register the current user into one Group. The Group must be added before setting
 // @param Group key
