@@ -8,7 +8,7 @@ declare module 'react-native-mixpanel' {
     track(event: string, properties?: Object): Promise<void>
     flush(): Promise<void>
     disableIpAddressGeolocalization(): Promise<void>
-    createAlias(alias: string, oldDistinctID?: string): void;
+    createAlias(alias: string, oldDistinctID?: string): Promise<void>
     identify(userId: string): Promise<void>
     addGroup(groupKey: string, groupId: string): Promise<void>
     setGroup(groupKey: string, groupId: string): Promise<void>
